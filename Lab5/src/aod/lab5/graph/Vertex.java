@@ -6,31 +6,31 @@ package aod.lab5.graph;
 import java.awt.Color;
 
 /**
- * Representerar ett hörn (nod) i en graf.
- * Ett hörn har en position (x,y), en identifierare och en färg.
+ * Representerar ett hörn (nod) i en graf. Ett hörn har en position (x,y), en
+ * identifierare och en färg.
  * 
  * @param <T> typen av identifierare för hörnet
  */
 public class Vertex<T> {
-	
+
 	/** Hörnets unika identifierare. */
 	private T info;
-	
+
 	/** Hörnets x-koordinat. */
 	private double x;
-	
+
 	/** Hörnets y-koordinat. */
 	private double y;
-	
+
 	/** Hörnets färg för visuell representation. */
 	private Color color;
-	
+
 	/**
-	 * Skapar ett nytt hörn med given position och identifierare.
-	 * Standardfärgen är svart.
+	 * Skapar ett nytt hörn med given position och identifierare. Standardfärgen är
+	 * svart.
 	 * 
-	 * @param x x-koordinat för hörnet
-	 * @param y y-koordinat för hörnet
+	 * @param x    x-koordinat för hörnet
+	 * @param y    y-koordinat för hörnet
 	 * @param info identifierare för hörnet
 	 */
 	public Vertex(double x, double y, T info) {
@@ -39,7 +39,7 @@ public class Vertex<T> {
 		this.info = info;
 		this.color = Color.BLACK;
 	}
-	
+
 	/**
 	 * Returnerar hörnets identifierare.
 	 * 
@@ -48,7 +48,7 @@ public class Vertex<T> {
 	public T getInfo() {
 		return info;
 	}
-	
+
 	/**
 	 * Returnerar hörnets x-koordinat.
 	 * 
@@ -57,7 +57,7 @@ public class Vertex<T> {
 	public double getX() {
 		return x;
 	}
-	
+
 	/**
 	 * Returnerar hörnets y-koordinat.
 	 * 
@@ -66,7 +66,7 @@ public class Vertex<T> {
 	public double getY() {
 		return y;
 	}
-	
+
 	/**
 	 * Returnerar hörnets färg.
 	 * 
@@ -75,7 +75,7 @@ public class Vertex<T> {
 	public Color getColor() {
 		return color;
 	}
-	
+
 	/**
 	 * Sätter hörnets färg.
 	 * 
@@ -84,12 +84,13 @@ public class Vertex<T> {
 	public void setColor(Color color) {
 		this.color = color;
 	}
+
 	/**
 	 * Sätter en ny identifierare för hörnet.
 	 * 
 	 * @param info den nya identifieraren
 	 */
 	public void setInfo(T info) {
-	    this.info = info;
+		this.info = info;
 	}
 }
