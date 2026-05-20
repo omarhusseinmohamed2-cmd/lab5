@@ -84,4 +84,12 @@ public class Vertex<T> {
 	public void setColor(Color color) {
 		this.color = color;
 	}
+	/**
+	 * Sätter en ny identifierare för hörnet.
+	 * 
+	 * @param info den nya identifieraren
+	 */
+	public void setInfo(T info) {
+	    this.info = info;
+	}
 }
