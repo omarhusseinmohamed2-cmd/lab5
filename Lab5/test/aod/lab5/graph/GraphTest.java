@@ -52,6 +52,7 @@ public class GraphTest {
 	public void testAddVertex_dubblett_laggssInteIn() {
 		graph.addVertex(99, 99, "A"); // "A" finns redan
 		assertEquals(3, graph.numberOfVertices());
+
 	}
 
 	// --- addEdge ---

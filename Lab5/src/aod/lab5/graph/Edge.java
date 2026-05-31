@@ -20,6 +20,7 @@ public class Edge<T> {
 	/**
 	 * Slutpunkten (hörnet) för denna kant.
 	 */
+
 	private Vertex<T> to;
 
 	/**
